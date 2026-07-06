@@ -8,17 +8,19 @@
   <null name="startup_services"/>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="JMS2waySSL">1.0</value>
+  </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">5</value>
+  <value name="build">6</value>
   <null name="description"/>
   <value name="created_date">06-07-2026 06:45:19 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-07-06T06:48:44.1501893Z</value>
+  <value name="lastUpdated">2026-07-06T06:50:40.984052137Z</value>
   <value name="wmProjectId">fld10280d16869784f9a3528</value>
   <value name="creator">siqadeveloper siqadeveloper</value>
 </Values>

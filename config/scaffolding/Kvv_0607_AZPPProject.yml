@@ -8,6 +8,12 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: JMS2waySSL
+  version: "1.0"
+  gitServerName: SIQAPsur
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: prabhakarsag
+  gitBranch: main
+- name: JMSTest
   gitServerName: SIQAPsur
   gitUrl: https://github.com/prabhakarsag
   gitUsername: prabhakarsag
@@ -19,11 +25,15 @@ services:
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: JMSTest
+    version: "1.0"
 - serviceName: project.kvv_0607_azpp.referencedata:ref1
   packages:
   - name: Kvv_0607_AZPPProject
     version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: JMSTest
     version: "1.0"
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false

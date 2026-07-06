@@ -14,9 +14,15 @@ packages:
   gitUsername: prabhakarsag
   gitBranch: main
 - name: JMSTest
+  version: "1.0"
   gitServerName: SIQAPsur
   gitUrl: https://github.com/prabhakarsag
   gitUsername: prabhakarsag
+  gitBranch: main
+- name: SSL_JDBC_Test
+  gitServerName: SIQA_KVV_IBM
+  gitUrl: https://github.com/prabhakaribm
+  gitUsername: Karthik-V-IBM-10
   gitBranch: main
 services:
 - serviceName: project.kvv_0607_azpp.integrations:refdaf
@@ -25,16 +31,28 @@ services:
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_0607_azpp.referencedata:ref1
   packages:
   - name: Kvv_0607_AZPPProject
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool

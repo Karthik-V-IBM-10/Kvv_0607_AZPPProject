@@ -1,0 +1,9 @@
+version: "1.0"
+projectName: Kvv_0607_AZPPProject
+runtimes:
+- runtimeAlias: kvv_0607_AZPP
+  assets:
+  - name: fld_238146682_stage00.projects.fld10280d16869784f9a3528.integrations:tppsf
+    type: flow
+    stepId: /0
+    reference: fld_238146682_stage00.projects.fld10280d16869784f9a3528.WmPackageServiceProvider.SIQACloudStreamsTests:connetorOperations

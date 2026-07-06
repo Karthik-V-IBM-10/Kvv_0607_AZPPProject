@@ -25,6 +25,11 @@ packages:
   gitUrl: https://github.com/prabhakaribm
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: SIQACloudStreamsTests
+  gitServerName: SIQA_KVV_IBM
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
 - serviceName: project.kvv_0607_azpp.integrations:JMSFlowTest
   packages:
@@ -36,12 +41,14 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
-  - name: SIQAJDBCAdapterTests
-    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: publisher:publisher
   packages:
   - name: JMSTest
@@ -60,12 +67,14 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
-  - name: SIQAJDBCAdapterTests
-    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: jms2wayssl_publisher:jms2wayssl_publisher
   packages:
   - name: JMS2waySSL
@@ -80,12 +89,14 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
-  - name: SIQAJDBCAdapterTests
-    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: SSL_JDBC_Test.services:getSSLandCloseConn
   packages:
   - name: SSL_JDBC_Test
@@ -130,12 +141,14 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
-  - name: SIQAJDBCAdapterTests
-    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.kvv_0607_azpp.referencedata:ref1
   packages:
   - name: Kvv_0607_AZPPProject
@@ -146,12 +159,14 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
-  - name: SIQAJDBCAdapterTests
-    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
